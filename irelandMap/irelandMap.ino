@@ -1,9 +1,11 @@
+int westportLED = 9;
+int holycrossLED = 10;
 int donegalLED = 11;
 int sligoLED = 12;
 int inishbofinLED = 13;
 
-int allLEDs[] = {donegalLED, sligoLED, inishbofinLED};
-int numberOfLEDs = 3;
+int allLEDs[] = {donegalLED, sligoLED, inishbofinLED, westportLED, holycrossLED};
+int numberOfLEDs = sizeof(allLEDs);
 
 void setup() {
   for (byte i = 0; i < numberOfLEDs; i = i + 1) {
